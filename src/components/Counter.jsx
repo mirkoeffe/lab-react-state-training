@@ -9,9 +9,7 @@ function Counter() {
   };
   const decrement = () => {
     console.log("counter decremented");
-    if (count === 0) {
-      increment();
-    } else {
+    if (count > 0) {
       setCount(count - 1);
     }
   };
