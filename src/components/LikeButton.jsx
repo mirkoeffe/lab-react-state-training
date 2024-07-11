@@ -8,7 +8,13 @@ function LikeButton() {
   };
 
   return (
-    <button className="like" onClick={increment}>
+    <button
+      className="like"
+      onClick={() => {
+        increment();
+        console.log("Hello Guys");
+      }}
+    >
       {count} Likes
     </button>
   );
